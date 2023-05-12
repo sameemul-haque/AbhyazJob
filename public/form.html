@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-lightsticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img style="height: 5vh;" src="/images/logo.png" alt="Abhyaz Logo">Abhyaz Job Openings</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <br><br>
+  <div class="container">
+    <h1>Job Application Form</h1>
+    <form action="/apply" method="post">
+      <div class="form-group">
+        <label for="job-id">Job ID</label>
+        <input type="text" class="form-control" id="job-id" name="job-id" placeholder="Enter job ID">
+      </div>
+      <div class="form-group">
+        <label for="full-name">Full name</label>
+        <input type="text" class="form-control" id="full-name" name="full-name" placeholder="Enter full name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="mobile-number">Mobile number</label>
+        <input type="text" class="form-control" id="mobile-number" name="mobile-number" placeholder="Enter mobile number">
+      </div>
+      <div class="form-group">
+        <label for="skills">Skills</label>
+        <textarea class="form-control" id="skills" name="skills" rows="3" placeholder="Enter your skills"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="resume">Upload resume</label>
+        <input type="file" class="form-control" id="resume" name="resume">
+      </div>
+      <button type="submit" class="btn btn-primary">Apply job</button>
+    </form>
+  </div>
+  <br><br>
+  <footer class="footer">
+    <p>Copyright &copy; 2023 Job Portal</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -28,14 +28,13 @@ nav a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
 }
 
 nav a:hover {
     border: none;
     border-radius: 10px;
-    background-color: #005CCE;
-    color: #222 !important;
+    color: #005CCE !important;
 }
 
 main {
@@ -60,6 +59,7 @@ h2 {
 }
 .job-card {
     border: 2px solid #aaa;
+    background-color: #ccd;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.397);
@@ -165,7 +165,7 @@ a:hover {
 
 #about h1 {
     font-size: 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
