@@ -10,12 +10,13 @@
 - It have a nav header, carousel, job container, about, contact and footer
 - Jobs will be displayed according to the Job Type: Student Internship or Graduate Internship
 - Jobs are sorted in the order of Job Category
-- Application form for applying the job
+- Application form for applying the job adds the applicants data in firestore database
 
 
 ### Recruiters Page
 - This page have a form that adds the job details to the firestore database
 - It updates by default in the applicants page
+- Job Applications page displays the applicants details
 
 
 
