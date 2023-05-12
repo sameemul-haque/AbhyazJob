@@ -22,26 +22,94 @@
               <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#jobs">Jobs</a>
+              <a class="nav-link" href="#addjobs">Add Jobs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#applications">Job Applications</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     
-   
+    <main id="addjobs" class="container my-5">
+      <h2>Add Jobs</h2>
+      <form id="add-job-form">
+        <div class="row mb-3">
+          <label for="job-id" class="col-sm-2 col-form-label">Job ID</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="job-id" name="jobId" required>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="job-type" class="col-sm-2 col-form-label">Job Type</label>
+          <div class="col-sm-10">
+            <select class="form-select" id="job-type" name="jobType" required>
+              <option value="">Choose...</option>
+              <option value="student-internship">Student Internship</option>
+              <option value="job-seeker-internship">Job Seeker Internship</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="job-category" class="col-sm-2 col-form-label">Category</label>
+          <div class="col-sm-10">
+            <select class="form-select" id="job-category" name="jobCategory" required>
+              <option value="">Choose...</option>
+              <option value="advertising">Advertising</option>
+              <option value="arts-graphics">Arts & Graphics</option>
+              <option value="communications">Communications</option>
+              <option value="education">Education</option>
+              <option value="engineering">Engineering</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="job-title" class="col-sm-2 col-form-label">Job Title</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="job-title" name="jobTitle" required>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="job-description" class="col-sm-2 col-form-label">Job Description</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="job-description" name="jobDescription" required></textarea>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="remote-job" class="col-sm-2 col-form-label">Remote Job</label>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="remoteJob" id="remote-yes" value="yes" checked>
+              <label class="form-check-label" for="remote-yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="remoteJob" id="remote-no" value="no">
+              <label class="form-check-label" for="remote-no">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </main>    
     
     <footer class="footer">
       <p>Copyright &copy; 2023 Job Portal</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+
+    <!-- Import the Firestore library -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+    <script src="/firebase-config.js"></script>
+    <script src="addjobs.js"></script>
   </body>
 </html>
 

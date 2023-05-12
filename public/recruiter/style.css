@@ -25,6 +25,7 @@ nav {
 
 nav a {
     display: block;
+    margin-right: 20px;
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
@@ -92,3 +93,57 @@ footer {
     background-color: #ccc;
 }
 
+#addjobs {
+    background-color: #ddf;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #addjobs h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  #addjobs label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #addjobs input[type="text"],
+  #addjobs select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #addjobs textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #addjobs input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #addjobs input[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  
