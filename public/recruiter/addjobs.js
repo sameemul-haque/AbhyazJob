@@ -17,12 +17,12 @@ addJob.addEventListener("submit", (e) => {
   // Add record to Firestore database
   db.collection("records")
     .add({
-        jobId: jobId,
-        jobType: jobType,
-        jobCategory: jobCategory,
-        jobTitle: jobTitle,
-        jobDescription: jobDescription,
-        remoteJob: remoteJob
+      jobId: jobId,
+      jobType: jobType,
+      jobCategory: jobCategory,
+      jobTitle: jobTitle,
+      jobDescription: jobDescription,
+      remoteJob: remoteJob,
     })
     .then((docRef) => {
       console.log("Record added with ID: ", docRef.id);

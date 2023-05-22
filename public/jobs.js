@@ -4,8 +4,8 @@ const db = firebase.firestore();
 // Get a reference to the job list div
 const jobList = document.getElementById("job-list");
 
-  // Get a reference to the job type select element
-  const jobTypeSelect = document.getElementById("job-type");
+// Get a reference to the job type select element
+const jobTypeSelect = document.getElementById("job-type");
 
 // Create a function to render job records// Create a function to render job records
 function renderJob(doc) {
@@ -67,11 +67,10 @@ function getJobsByType(jobType) {
     });
 }
 
-    
-    // Get job records of the selected job type on page load
-    getJobsByType(jobTypeSelect.value);
-    
-    // Update job list when job type selection is changed
-    jobTypeSelect.addEventListener("change", (event) => {
-    getJobsByType(event.target.value);
-    });
+// Get job records of the selected job type on page load
+getJobsByType(jobTypeSelect.value);
+
+// Update job list when job type selection is changed
+jobTypeSelect.addEventListener("change", (event) => {
+  getJobsByType(event.target.value);
+});

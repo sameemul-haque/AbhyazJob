@@ -16,7 +16,9 @@ function renderApplicant(doc) {
   emailTd.textContent = doc.data().email;
   phoneTd.textContent = doc.data().mobileNumber;
   jobIdTd.textContent = doc.data().jobId;
-  resumeTd.innerHTML = `<a href="${doc.data().resume}" target="_blank">View Resume</a>`;
+  resumeTd.innerHTML = `<a href="${
+    doc.data().resume
+  }" target="_blank">View Resume</a>`;
 
   tr.appendChild(nameTd);
   tr.appendChild(emailTd);
