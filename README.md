@@ -1,8 +1,8 @@
 # Job Openings WebPage
 
 - In this project, I created mainly two web pages. One for job applicants and one for recruiters
-- Job Applicants: https://abhyazjob.web.app/
-- Recruiters: https://abhyazjob.web.app/recruiter
+- Job Applicants: https://jobopenings.web.app/
+- Recruiters: https://jobopenings.web.app/recruiter
 
 ### Job Applicants Page
 
