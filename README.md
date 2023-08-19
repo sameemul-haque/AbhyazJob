@@ -19,18 +19,11 @@
 - Job Applications page displays the applicants details
 
 ### Languages and Tools used:
-
-<img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html" height="40"/> HTML
-<br><br>
-<img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="css" height="40"/> CSS
-<br><br>
-<img src="https://upload.vectorlogo.zone/logos/getbootstrap/images/987f8f6c-263a-47b1-a85d-853cfca215d9.svg" alt="bootstrap" height="40"/> Bootstrap
-<br><br>
-<img src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg" alt="javascript" height="40"/> Javascript
-<br><br>
-<img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" height="40"/> Firebase
-<br><br>
-<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" height="40"/> Git
-<br><br>
-<img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="github" height="40"/> Github
-<br><br>
+[![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=333333 "JavaScript")](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Bootstrap](https://img.shields.io/badge/BOOTSTRAP-7952B3?style=for-the-badge&logo=bootstrap&logoColor=ffffff "Bootstrap")](https://getbootstrap.com/)
+[![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=ffffff "HTML")](https://html.spec.whatwg.org/multipage/)
+[![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=ffffff "CSS")](https://www.w3.org/TR/CSS/#css)
+[![Firebase](https://img.shields.io/badge/FIREBASE-FFCA28?style=for-the-badge&logo=firebase&logoColor=333333 "Firebase")](https://firebase.google.com/docs)
+[![Git](https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=ffffff "Git")](https://git-scm.com/)
+[![Github](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github "Github")](https://github.com/)
+[![VS Code](https://img.shields.io/badge/VS%20CODE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=ffffff "Visual Studio Code")](https://code.visualstudio.com/)
