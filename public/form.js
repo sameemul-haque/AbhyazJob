@@ -1,19 +1,17 @@
 const db = firebase.firestore();
 const form = document.querySelector("form");
+const jobIdInput = document.getElementById("job-id");
 form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
-
-  // Get the form data
-  const jobId = document.getElementById("job-id").value;
   const fullName = document.getElementById("full-name").value;
   const email = document.getElementById("email").value;
   const mobileNumber = document.getElementById("mobile-number").value;
   const skills = document.getElementById("skills").value;
   const resume = document.getElementById("resume").value;
+  const jobId = jobIdInput.value; 
 
-  // Add the form data to the "applicants" collection in Firestore
   db.collection("applicants")
     .add({
       jobId,
@@ -28,10 +26,8 @@ function handleSubmit(event) {
       console.log("Application submitted successfully");
       alert("Job added successfully!");
       window.location.href = "/";
-      // TODO: Add code to show a success message to the user
     })
     .catch((error) => {
       console.error("Error submitting application", error);
-      // TODO: Add code to show an error message to the user
     });
 }

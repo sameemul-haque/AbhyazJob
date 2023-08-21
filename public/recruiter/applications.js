@@ -1,9 +1,6 @@
-// get reference to the Firestore service
 const db = firebase.firestore();
-
 const applicantList = document.getElementById("applicant-list");
 
-// Create a function to render applicants
 function renderApplicant(doc) {
   let tr = document.createElement("tr");
   let nameTd = document.createElement("td");
@@ -11,7 +8,6 @@ function renderApplicant(doc) {
   let phoneTd = document.createElement("td");
   let jobIdTd = document.createElement("td");
   let resumeTd = document.createElement("td");
-
   nameTd.textContent = doc.data().fullName;
   emailTd.textContent = doc.data().email;
   phoneTd.textContent = doc.data().mobileNumber;
@@ -29,12 +25,10 @@ function renderApplicant(doc) {
   applicantList.appendChild(tr);
 }
 
-// Get applicants from Firestore database
 db.collection("applicants")
   .get()
   .then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
-      // Render each applicant
       renderApplicant(doc);
     });
   })

@@ -1,4 +1,3 @@
-/* Set the font family and background color for the form */
 form {
   font-family: Arial, sans-serif;
   background-color: #ddf;
@@ -6,7 +5,6 @@ form {
   border-radius: 5px;
 }
 
-/* Style the form fields */
 .form-control {
   width: 100%;
   padding: 12px 20px;
@@ -16,12 +14,10 @@ form {
   box-sizing: border-box;
 }
 
-/* Style the label */
 label {
   font-weight: bold;
 }
 
-/* Style the button */
 button {
   background-color: #4caf50;
   color: white;
@@ -42,7 +38,6 @@ button:hover {
   }
 }
 
-/* Add spacing between form groups */
 .form-group {
   margin-bottom: 20px;
 }

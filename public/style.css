@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -17,7 +17,7 @@ footer {
   background-color: #222;
 }
 nav {
-  background-color: #aaa;
+  background-color: #e5e5e5;
   color: #000;
   list-style: none;
   margin: 0;
@@ -26,6 +26,7 @@ nav {
 
 nav a {
   display: block;
+  border-radius: 10px;
   padding: 10px 20px;
   text-decoration: none;
   color: #000 !important;
@@ -34,7 +35,9 @@ nav a {
 nav a:hover {
   border: none;
   border-radius: 10px;
-  color: #005cce !important;
+  background-color: #005cce;
+  text-decoration: none;
+  color: #000 !important;
 }
 
 main {

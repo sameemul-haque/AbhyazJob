@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+
     <nav class="navbar navbar-expand-lg navbar-lightsticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="/"
@@ -39,12 +40,22 @@
         <div class="form-group">
           <label for="job-id">Job ID</label>
           <input
-            type="text"
-            class="form-control"
-            id="job-id"
-            name="job-id"
-            placeholder="Enter job ID"
-          />
+          type="text"
+          class="form-control"
+          id="job-id"
+          name="job-id"
+          placeholder="Enter job ID"
+          value= ""
+        />
+        <script>
+          const urlParams = new URLSearchParams(window.location.search);
+          const jobId = urlParams.get("jobId");
+          const jobIdInput = document.getElementById("job-id");
+        
+          if (jobId) {
+            jobIdInput.value = jobId;
+          }
+        </script>
         </div>
         <div class="form-group">
           <label for="full-name">Full name</label>
@@ -100,11 +111,11 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
 
-    <!-- Import the Firestore library -->
     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
     <script src="firebase-config.js"></script>
     <script src="form.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
