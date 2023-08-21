@@ -5,13 +5,13 @@ form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
+  const jobId = document.getElementById("job-id").value;
   const fullName = document.getElementById("full-name").value;
   const email = document.getElementById("email").value;
   const mobileNumber = document.getElementById("mobile-number").value;
   const skills = document.getElementById("skills").value;
   const resume = document.getElementById("resume").value;
-  const jobId = jobIdInput.value; 
-
+  
   db.collection("applicants")
     .add({
       jobId,
@@ -25,7 +25,6 @@ function handleSubmit(event) {
     .then(() => {
       console.log("Application submitted successfully");
       alert("Job added successfully!");
-      window.location.href = "/";
     })
     .catch((error) => {
       console.error("Error submitting application", error);
