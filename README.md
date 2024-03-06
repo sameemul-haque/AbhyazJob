@@ -17,7 +17,10 @@
 - This page have a form that adds the job details to the firestore database
 - It updates by default in the applicants page
 - Job Applications page displays the applicants details
-
+---
+> [!IMPORTANT]
+> We would like to inform you that this platform is a hobby project created for educational and experimental purposes. The job listings and application features on this site are simulated and not real.
+---
 ### Languages and Tools used:
 [![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=333333 "JavaScript")](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Bootstrap](https://img.shields.io/badge/BOOTSTRAP-7952B3?style=for-the-badge&logo=bootstrap&logoColor=ffffff "Bootstrap")](https://getbootstrap.com/)
